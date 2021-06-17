@@ -10,7 +10,7 @@ resource "random_id" "randomId" {
 resource "azurerm_storage_account" "mystorageaccount" {
   name                     = "diag${random_id.randomId.hex}"
   resource_group_name      = azurerm_resource_group.myterraformgroup.name
-  location                 = "eastus"
+  location                 = var.location
   account_replication_type = "LRS"
   account_tier             = "Standard"
 
