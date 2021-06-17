@@ -1,39 +1,40 @@
 variable "resourcegroupName" {
-    type = string
+  type = string
 }
 
 variable "location" {
-    type = string
+  type = string
 }
 
 variable "tags" {
-    type = map(any)
+  type = map(any)
 }
 
 variable "vnetName" {
-    type = string
+  type = string
 }
 
 variable "subnetName" {
-    type = string
+  type = string
 }
 
 variable "ipaddressName" {
-    type = string
+  type = string
 }
 
 variable "virtualMachineName" {
-    type = string
+  type = string
 }
 
 variable "diskSize" {
-    type = string
+  type    = string
+  default = "Standard_DS1_v2"
 }
 
 variable "nicName" {
-    type = string
+  type = string
 }
 
 variable "nsgname" {
-    type = string
+  type = string
 }
